@@ -37,14 +37,34 @@
 
   <div class="video-container">
     <video id="background-video" autoplay loop muted playsinline>
-      <source src="images/vecteezy_digital-blue-background-with-dots-and-lines-big-data_6299512_803.mov"
-        type="video/mp4">
+      <iframe
+        src="https://www.dropbox.com/scl/fi/kttk8rdqx0g50jjv89iw0/vecteezy_digital-blue-background-with-dots-and-lines-big-data_6299512_803.mov?rlkey=uofu1h9288k4xrkbvktlczey3&dl=0"></iframe>
+
+      <!-- <source
+        src="https://www.dropbox.com/scl/fi/kttk8rdqx0g50jjv89iw0/vecteezy_digital-blue-background-with-dots-and-lines-big-data_6299512_803.mov?rlkey=uofu1h9288k4xrkbvktlczey3&dl=0"
+        type="video/mp4"> -->
     </video>
+  </div>
+
+  <div class="contact-info">
+    <div class="contact-card">
+      <div class="contact-links">
+        <a class="link" href="https://github.com/swathiasok">
+          <img class="navicon" src="images/github.svg">
+        </a>
+        <a class="link" href="https://www.linkedin.com/in/swathi-asok/">
+          <img class="navicon" src="images/linkedin.png">
+        </a>
+        <a class="link" href="mailto:swathiasok14@gmail.com">
+          <img class="navicon" src="images/mail.png">
+        </a>
+      </div>
+    </div>
   </div>
 
   <div class="nav-info">
     <div class="nav-links">
-      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="home.html">Home</a>
       <a class="nav-link" href="experiences.html">Experiences</a>
       <a class="nav-link" href="project.html">Projects</a>
     </div>
@@ -113,19 +133,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    document.querySelector('.up').addEventListener('click', function (e) {
-      e.preventDefault();
-
-      const targetPage = this.getAttribute('href');
-
-      document.body.classList.add('page-transition-up');
-      setTimeout(function () {
-        window.location.href = targetPage;
-      }, 400);
-    });
-  </script>
 
 </body>
 
