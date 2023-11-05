@@ -4,8 +4,6 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    background-color: #00091c;
-    background-size: cover;
 }
 
 .section {
@@ -15,12 +13,13 @@ body {
     height: 100vh;
 }
 
-.video-container {
+.video-container,
+.vanta-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .video-container video {
