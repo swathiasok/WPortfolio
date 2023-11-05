@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Portfolio Website">
+  <meta name="author" content="Swathi Asokraj">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Swathi A Portfolio</title>
+
+  <!-- Adding Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+
+  <!-- Adding Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Adding CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Adding icons -->
+  <link rel="icon" href="images/favicon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Adding JQuery -->
+  <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="video-container">
+    <video id="background-video" autoplay loop muted playsinline>
+      <source src="images/vecteezy_digital-blue-background-with-dots-and-lines-big-data_6299512_803.mov"
+        type="video/mp4">
+    </video>
+  </div>
+
+  <div class="nav-info">
+    <div class="nav-links">
+      <a class="nav-link" href="home.html">Home</a>
+      <a class="nav-link" href="exp.html">Experiences</a>
+      <a class="nav-link" href="project.html">Projects</a>
+    </div>
+    <a class="btn btn-outline-primary download-link" href="Final_Resume copy.pdf" download>Resume <i
+        class="fas fa-download"></i></a>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-4 mx-auto top-row first">
+
+      <div class="card project">
+        <a class="project-link" href="https://github.com/swathiasok/BlogSite">
+          <div class="card-body">
+            <h6 class="card-title">Blog site using EJS, Node and MongoDB</h6>
+            <img class="project-img" src="images/food.png">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 mx-auto top-row second">
+
+      <div class="card project">
+        <a class="project-link" href="https://github.com/swathiasok/MaskDetection">
+          <div class="card-body">
+            <h6 class="card-title">Object Detection using SSD</h6>
+            <img class="project-img" src="images/object_detection_1.png">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 mx-auto top-row third">
+
+      <div class="card project">
+        <a class="project-link" href="https://github.com/swathiasok/PartialFaceRecognition">
+          <div class="card-body">
+            <h6 class="card-title">Multi-face Recognition of Partial Faces</h6>
+            <img class="project-img" src="images/face_recog.png">
+          </div>
+
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 mx-auto bottom-row first">
+      <div class="card project">
+        <a class="project-link" href="https://github.com/swathiasok/Login">
+
+          <div class="card-body">
+            <h6 class="card-title">Intelligent Automatic Traffic Control Sytem for Ambulance using IoT</h6>
+            <img class="project-img" src="images/traffic.webp">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4 mx-auto bottom-row third">
+      <div class="card project">
+        <a class="project-link" href="https://github.com/swathiasok/Smile-Detection-based-selfie-capture">
+          <div class="card-body">
+            <h6 class="card-title">Smile Detection based Selfie Capture using OpenCV</h6>
+            <img class="project-img" src="images/face.png">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.up').addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const targetPage = this.getAttribute('href');
+
+      document.body.classList.add('page-transition-up');
+      setTimeout(function () {
+        window.location.href = targetPage;
+      }, 400);
+    });
+  </script>
+
+</body>
+
+</html>
