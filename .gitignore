@@ -1,0 +1,6 @@
+# Files to ignore
+
+images/favicon.jpg
+.DS_Store
+portfolio.code-workspace
+idea
