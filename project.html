@@ -35,16 +35,8 @@
 
 <body>
 
-  <div class="video-container">
-    <video id="background-video" autoplay loop muted playsinline>
-      <iframe
-        src="https://www.dropbox.com/scl/fi/kttk8rdqx0g50jjv89iw0/vecteezy_digital-blue-background-with-dots-and-lines-big-data_6299512_803.mov?rlkey=uofu1h9288k4xrkbvktlczey3&dl=0"></iframe>
-
-      <!-- <source
-        src="https://www.dropbox.com/scl/fi/kttk8rdqx0g50jjv89iw0/vecteezy_digital-blue-background-with-dots-and-lines-big-data_6299512_803.mov?rlkey=uofu1h9288k4xrkbvktlczey3&dl=0"
-        type="video/mp4"> -->
-    </video>
-  </div>
+  <!-- Background Video -->
+  <div id="vanta-container"></div>
 
   <div class="contact-info">
     <div class="contact-card">
@@ -133,6 +125,15 @@
       </div>
     </div>
   </div>
+
+  <!-- Adding Vanta.js tags -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+    integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="vanta.net.min.js"></script>
+
+  <!-- Adding script file -->
+  <script src="background.js"></script>
 
 </body>
 

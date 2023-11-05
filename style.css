@@ -13,19 +13,13 @@ body {
     height: 100vh;
 }
 
-.video-container,
-.vanta-container {
-    position: absolute;
+#vanta-container {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-}
-
-.video-container video {
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    z-index: -1;
 }
 
 .welcome-text {
@@ -36,7 +30,7 @@ body {
     left: 30%;
     padding: 20px;
     opacity: 0.5;
-    background-color: #01ffff;
+    background-color: #9f4d6e;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -55,12 +49,12 @@ body {
 
 .welcome-text a {
     text-decoration: none;
-    color: #000e28;
+    color: #11062a;
 }
 
 .welcome-msg {
     overflow: hidden;
-    border-right: .15em solid #000e28;
+    border-right: .15em solid #11062a;
     white-space: nowrap;
     margin: auto;
     letter-spacing: .10em;
@@ -88,7 +82,7 @@ body {
     }
 
     50% {
-        border-color: #000e28;
+        border-color: #11062a;
     }
 }
 
@@ -97,7 +91,7 @@ body {
     top: 30px;
     left: 30px;
     opacity: 0.5;
-    background-color: #01ffff;
+    background-color: #9f4d6e;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 5px;
@@ -141,11 +135,12 @@ body {
 .nav-link {
     text-decoration: none;
     opacity: 0.5;
-    color: #01ffff;
+    color: #9f4d6e;
 }
 
 .nav-link:hover {
-    color: #01ffff;
+    color: #9f4d6e;
+    transform: scale(1.1);
     opacity: 1;
 }
 
@@ -154,8 +149,8 @@ body {
 }
 
 .download-link:hover {
-    background-color: #000e28;
-    color: #01ffff;
+    background-color: #11062a;
+    color: #9f4d6e;
     text-decoration: none;
 }
 
@@ -172,30 +167,34 @@ body {
     transform: translate(-50%, -50%);
     padding: 20px 70px;
     opacity: 0.5;
-    background-color: #01ffff;
+    background-color: #9f4d6e;
     border-radius: 25px;
 }
 
 .info {
     text-align: left;
-    color: #010f2a;
+    color: #11062a;
 }
 
 .info h1,
 h3 {
-    color: #324366;
+    color: #f5d7e3;
+}
+
+.info p {
+    font-weight: 500;
 }
 
 .btn-outline-primary {
-    color: #01ffff;
-    border-color: #01ffff;
-
+    color: #9f4d6e;
+    border-color: #9f4d6e;
     opacity: 0.5;
 }
 
 .btn-outline-primary:hover {
-    background-color: #01ffff;
-    color: #010f2a;
+    background-color: #9f4d6e;
+    border-color: #9f4d6e;
+    color: #11062a;
 }
 
 .buttons {
@@ -209,13 +208,11 @@ h3 {
 .project {
     padding: 30px;
     opacity: 0.5;
-    background-color: #01ffff;
+    background-color: #9f4d6e;
     width: 60%;
     height: 100%;
-    background-color: #01ffff;
+    background-color: #9f4d6e;
     border-radius: 30%;
-
-
 }
 
 .card.project:hover {
@@ -230,6 +227,11 @@ h3 {
 .card.project:hover .project-img {
     opacity: 0.7;
 }
+
+.row {
+    z-index: 1;
+}
+
 
 .top-row {
     margin-top: 10%;
@@ -265,7 +267,7 @@ h3 {
 
 a.project-link {
     text-decoration: none;
-    color: #000e28;
+    color: #11062a;
 }
 
 .experiences {
@@ -283,7 +285,7 @@ a.project-link {
     left: 60px;
     width: 2px;
     height: 100%;
-    background: #01ffff;
+    background: #9f4d6e;
     z-index: -1;
 }
 
@@ -297,9 +299,9 @@ a.project-link {
 .date {
     width: 120px;
     padding: 10px;
-    background-color: #01ffff;
+    background-color: #9f4d6e;
     border-radius: 5px;
-    color: #000e28;
+    color: #11062a;
     text-align: center;
     font-weight: 600;
     margin-right: 30px;
@@ -307,8 +309,8 @@ a.project-link {
 
 .content {
     flex: 1;
-    background-color: #01ffff;
-    color: #000e28;
+    background-color: #9f4d6e;
+    color: #11062a;
     border-radius: 5px;
     padding: 20px;
     margin-left: 30px;
