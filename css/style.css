@@ -81,10 +81,20 @@ body {
     }
 }
 
+.fa-home {
+    position: fixed;
+    top: 35px;
+    left: 30px;
+    color: #9f4d6e;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+
 .contact-info {
     position: fixed;
     top: 30px;
-    left: 30px;
+    left: 70px;
     opacity: 0.5;
     background-color: #9f4d6e;
     border-radius: 15px;
@@ -197,6 +207,12 @@ body {
     background-color: #9f4d6e;
     border-color: #9f4d6e;
     color: #11062a;
+}
+
+.btn-outline-primary:active {
+    background-color: #9f4d6e !important;
+    border-color: #9f4d6e !important;
+    color: #11062a !important;
 }
 
 .buttons {
