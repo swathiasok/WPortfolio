@@ -35,16 +35,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Oswald', sans-serif;
 }
 
 .welcome-text:hover {
-    width: 42%;
-    height: 12%;
-    top: 44%;
-    left: 29%;
-    margin: auto;
-    padding: auto;
-    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .welcome-text a {
@@ -160,8 +155,8 @@ body {
 
 .intro-text {
     position: absolute;
-    width: 40%;
-    height: 30%;
+    width: 45%;
+    height: 35%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -176,13 +171,20 @@ body {
     color: #11062a;
 }
 
-.info h1,
-h3 {
+.info h1 {
     color: #f5d7e3;
+    font-family: 'Noto Serif';
+}
+
+.info h4 {
+    color: #f5d7e3;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 15px;
 }
 
 .info p {
     font-weight: 500;
+    font-family: 'Agbalumo';
 }
 
 .btn-outline-primary {
@@ -213,6 +215,8 @@ h3 {
     height: 100%;
     background-color: #9f4d6e;
     border-radius: 30%;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
 }
 
 .card.project:hover {
@@ -305,6 +309,7 @@ a.project-link {
     text-align: center;
     font-weight: 600;
     margin-right: 30px;
+    font-family: 'Sometype Mono', monospace;
 }
 
 .content {
@@ -315,6 +320,7 @@ a.project-link {
     padding: 20px;
     margin-left: 30px;
     border-right: 0;
+    font-family: 'Sometype Mono', monospace;
 }
 
 .content p {
