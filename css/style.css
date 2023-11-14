@@ -48,6 +48,7 @@ body {
     animation-fill-mode: forwards;
     text-decoration: none;
     color: #1a1625;
+    word-wrap: break-word;
 }
 
 @keyframes typing {
@@ -195,7 +196,7 @@ body {
     color: #1a1625;
     font-family: 'Chakra Petch', sans-serif;
     padding: 5%;
-    margin-top: 5%;
+    margin-top: 7%;
 }
 
 .proj-text {
