@@ -228,78 +228,6 @@ body {
     background-color: #1a1625 !important;
 }
 
-/* EXPERIENCES PAGE CSS */
-
-.container-exp {
-    margin: 10% 0;
-}
-
-.timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px 0;
-    width: 30%;
-    text-align: center;
-    opacity: 0.7;
-    margin-bottom: 5%;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1%;
-    height: 100%;
-    background-color: #1a1625;
-}
-
-.timeline-item {
-    position: relative;
-    margin: 2% 0 15% 0;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.timeline-date {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    margin: 3% auto;
-    padding: 2%;
-}
-
-.timeline-content {
-    padding: 5% 10%;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    min-width: 10rem;
-}
-
-.timeline-content:hover {
-    transform: scale(1.1);
-}
-
-.timeline-item:last-child {
-    margin-bottom: 2%;
-}
-
-.exp-p,
-.date {
-    margin: 0 !important;
-}
-
-.timeline-content a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.timeline-content a:hover {
-    color: inherit;
-    text-decoration: none;
-}
-
 /* CONTACT PAGE CSS */
 
 .contact-main {
@@ -346,5 +274,195 @@ body {
 
     .contact-link {
         margin-bottom: 10%;
+    }
+}
+
+/* EXPERIENCES PAGE CSS */
+
+.timeline {
+    position: relative;
+    padding: 5rem;
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+}
+
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    border-right: 2px dashed #4b546f;
+    height: 100%;
+    display: block;
+}
+
+.timeline-row {
+    padding-left: 50%;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+.timeline-row .timeline-time {
+    position: absolute;
+    right: 50%;
+    top: 10%;
+    text-align: right;
+    margin-right: 2%;
+    color: #11062a;
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.timeline-row .timeline-content {
+    position: relative;
+    padding: 7% 5%;
+    border-radius: 2%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.7;
+    color: #11062a;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.timeline-row .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    z-index: 10;
+    background: #272e48;
+    border: 2px dashed #4b546f;
+}
+
+.timeline-row .timeline-content h4 {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.timeline-row .timeline-content p {
+    margin-bottom: 5%;
+}
+
+.timeline-btn {
+    margin: 5%;
+    border: 1px solid #a19caf !important;
+    color: #a19caf !important;
+    background-color: #fff;
+    border-radius: 10%;
+}
+
+.timeline-btn:hover {
+    border: 1px solid #a19caf !important;
+    color: #fff !important;
+    background-color: #a19caf !important;
+}
+
+
+.timeline-row:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    text-align: left;
+}
+
+.timeline-row:nth-child(even) .timeline-content:after {
+    left: -8px;
+    right: initial;
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(-135deg);
+}
+
+.timeline-row:nth-child(even) .timeline-content:before {
+    left: -50px;
+    right: initial;
+}
+
+.timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+}
+
+.timeline-row:nth-child(odd) .timeline-time {
+    right: auto;
+    left: 50%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.timeline-row:nth-child(odd) .timeline-content {
+    margin-right: 40px;
+}
+
+.timeline-row:nth-child(odd) .timeline-content:after {
+    right: -8px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 992px) {
+    .timeline {
+        padding: 15px;
+    }
+
+    .timeline:after {
+        border: 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) {
+        padding: 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content {
+        margin: 0;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content:before {
+        display: none;
+    }
+
+    .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+        display: none;
+    }
+
+    .timeline .timeline-row:nth-child(even) {
+        padding: 0;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+        text-align: left;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-content {
+        margin: 0;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-content:before {
+        display: none;
+    }
+
+    .timeline .timeline-row:nth-child(even) .timeline-content:after {
+        display: none;
     }
 }
