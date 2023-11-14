@@ -316,7 +316,7 @@ body {
 
 .timeline-row .timeline-content {
     position: relative;
-    padding: 7% 5%;
+    padding: 7%;
     border-radius: 2%;
     background: #fff;
     display: flex;
