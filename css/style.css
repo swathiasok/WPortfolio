@@ -20,24 +20,21 @@ body {
 
 /* WELCOME PAGE CSS */
 
-.welcome-text {
-    position: absolute;
-    width: 100%;
-    max-width: 500px;
+.welcome-div {
+    border-radius: 1.25rem !important;
+    text-align: center;
+}
+
+.info {
     padding: 1%;
     opacity: 0.7;
-    border-radius: 25px;
+    border-radius: 2%;
     font-family: 'Oswald', sans-serif;
     background-color: #fff;
 }
 
-.welcome-text:hover {
+.welcome-div:hover {
     transform: scale(1.1);
-}
-
-.welcome-text a {
-    text-decoration: none;
-    color: #1a1625;
 }
 
 .title {
@@ -49,6 +46,8 @@ body {
     display: inline-block;
     width: 100%;
     animation-fill-mode: forwards;
+    text-decoration: none;
+    color: #1a1625;
 }
 
 @keyframes typing {
@@ -103,7 +102,7 @@ body {
 
 .offcanvas {
     background-color: #a19caf !important;
-    width: 30% !important;
+    width: 50% !important;
 }
 
 .offcanvas-body {
@@ -196,6 +195,7 @@ body {
     color: #1a1625;
     font-family: 'Chakra Petch', sans-serif;
     padding: 5%;
+    margin-top: 5%;
 }
 
 .proj-text {
@@ -265,14 +265,15 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 50%;
     margin: 3% auto;
-    padding: 1%;
+    padding: 2%;
 }
 
 .timeline-content {
-    padding: 5%;
+    padding: 5% 10%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 10rem;
 }
 
 .timeline-content:hover {

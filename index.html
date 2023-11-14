@@ -21,10 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
 
-    <!-- Adding Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <!-- Adding CSS stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -33,8 +29,10 @@
     <link rel="icon" href="images/favicon.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- Adding JQuery -->
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- Adding Bootstrap and JQuery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
 </head>
 
@@ -46,9 +44,9 @@
         <div id="vanta-container"></div>
 
         <!-- Intro Section Card -->
-        <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
-            <div class="card text-center welcome-text">
-                <div class="card-body info">
+        <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="card text-center col-md-5 col-sm-10 col-12 welcome-div">
+                <div class="card-body text-center info">
                     <a class="link" href="pages/home.html">
                         <h2 class="title">
                             Welcome to my Portfolio!
