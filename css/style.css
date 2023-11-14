@@ -353,21 +353,6 @@ body {
     margin-bottom: 5%;
 }
 
-.timeline-btn {
-    margin: 5%;
-    border: 1px solid #a19caf !important;
-    color: #a19caf !important;
-    background-color: #fff;
-    border-radius: 10%;
-}
-
-.timeline-btn:hover {
-    border: 1px solid #a19caf !important;
-    color: #fff !important;
-    background-color: #a19caf !important;
-}
-
-
 .timeline-row:nth-child(even) .timeline-content {
     margin-left: 40px;
     text-align: left;
