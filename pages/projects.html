@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Swathi Asokraj">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Swathi A Portfolio</title>
+
+    <!-- Adding Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Adding CSS stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Adding icons -->
+    <link rel="icon" href="../images/favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Adding JQuery -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Adding Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- Background Video -->
+    <div id="vanta-container"></div>
+
+    <!-- NavBar -->
+
+    <nav class="navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><i class="fa fa-home text-white"></i></a>
+            <a class="btn btn-outline-primary download-link ms-auto resume" href="../files/Final_Resume copy.pdf"
+                download><b>RESUME</b> <i class="fas fa-download"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars text-white"></i></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header d-flex justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experiences.html">EXPERIENCES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="text-center container" style="padding: 2%;">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light proj-title">Projects</h1>
+                </div>
+            </div>
+
+            <div class="album">
+                <div class="container projects">
+                    <div class="row row-cols-1 row-cols-sm-2 g-3 align-items-stretch">
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body proj">
+                                    <a class="project-link" href="https://github.com/swathiasok/PartialFaceRecognition">
+                                        <img class="d-block proj-img" src="../images/face_recog.png"
+                                            alt="Face Recognition">
+                                    </a>
+                                    <p class="card-text proj-text">Multi-face Recognition of Partial Faces</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="project-link"
+                                            href="https://github.com/swathiasok/PartialFaceRecognition">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary view-btn view-btn">View
+                                                project</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body proj">
+                                    <a class="project-link" href="https://github.com/swathiasok/BlogSite">
+                                        <img class="d-block proj-img" src="../images/blog.png" alt="Blog Site">
+                                    </a>
+                                    <p class="card-text proj-text">Blog site using EJS</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="project-link" href="https://github.com/swathiasok/BlogSite">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary view-btn">View
+                                                project</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body proj">
+                                    <a class="project-link" href="https://github.com/swathiasok/MaskDetection">
+                                        <img class="d-block proj-img" src="../images/object_detection.png"
+                                            alt="Object Recognition">
+                                    </a>
+                                    <p class="card-text proj-text">Object Detection using SSD</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="project-link" href="https://github.com/swathiasok/MaskDetection">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary view-btn view-btn">View
+                                                project</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body proj">
+                                    <a class="project-link" href="https://github.com/swathiasok/MaskDetection">
+                                        <img class="d-block proj-img proj-img" src="../images/mask_detect.jpg"
+                                            alt="Object Recognition">
+                                    </a>
+                                    <p class="card-text proj-text">Mask Detection</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="project-link" href="https://github.com/swathiasok/MaskDetection">
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary view-btn view-btn">View
+                                                project</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body proj">
+                                    <a class="project-link" href="https://github.com/swathiasok/Login">
+                                        <img class="d-block proj-img" src="../images/traffic_system.jpg"
+                                            alt="Automatic Traffic Control System">
+                                    </a>
+                                    <p class="card-text proj-text">Automatic Traffic Control System</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="project-link" href="https://github.com/swathiasok/Login">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary view-btn">View
+                                                project</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body proj">
+                                    <a class="project-link"
+                                        href="https://github.com/swathiasok/Smile-Detection-based-selfie-capture">
+                                        <img class="d-block proj-img proj-img" src="../images/face_detect.png"
+                                            alt="Face Detection">
+                                    </a>
+                                    <p class="card-text proj-text">Computer vision-based smart selfie</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <a class="project-link"
+                                            href="https://github.com/swathiasok/Smile-Detection-based-selfie-capture">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary view-btn">View
+                                                project</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- Adding Vanta.js tags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"
+        integrity="sha512-334uBDwY0iZ2TklV1OtDtBW9vp7jjP7SWRzT7Ehu1fdtPIjTpCwTSFb8HI/YBau9L1/kRBEOALrS229Kry4yFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../files/vanta.net.min.js"></script>
+
+    <!-- Adding script file -->
+    <script src="../js/background.js"></script>
+
+    <!-- Adding Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

@@ -7,6 +7,6 @@ VANTA.NET({
     minWidth: 200.00,
     scale: 1.00,
     scaleMobile: 1.00,
-    color: 0x89435e,
-    backgroundColor: 0x10062a
+    color: 0xfcfcfc,
+    backgroundColor: 0xa19caf
 })
