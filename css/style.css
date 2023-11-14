@@ -134,7 +134,7 @@ body {
 
 .intro-text {
     padding: 5%;
-    opacity: 0.5;
+    opacity: 0.7;
     background-color: #fff !important;
     border-radius: 25px;
     box-shadow: 0px 0px 10px #a19caf;
@@ -154,7 +154,7 @@ body {
 .home-p {
     font-weight: 500;
     font-family: 'Agbalumo';
-    color: #a19caf;
+    color: #938aac;
 }
 
 .home-text {
