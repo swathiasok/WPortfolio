@@ -134,7 +134,7 @@ body {
 
 .intro-text {
     padding: 5%;
-    opacity: 0.7;
+    opacity: 0.8;
     background-color: #fff !important;
     border-radius: 25px;
     box-shadow: 0px 0px 10px #a19caf;
@@ -147,7 +147,7 @@ body {
 }
 
 .info h1 {
-    color: #1a1625;
+    color: #11062a;
     font-family: 'Noto Serif';
 }
 
@@ -158,7 +158,7 @@ body {
 }
 
 .home-text {
-    color: #1a1625;
+    color: #11062a;
     font-family: 'Merriweather', serif;
     padding-bottom: 15px;
 }
@@ -193,7 +193,7 @@ body {
 }
 
 .proj-title {
-    color: #1a1625;
+    color: #11062a;
     font-family: 'Chakra Petch', sans-serif;
     padding: 5%;
     margin-top: 7%;
