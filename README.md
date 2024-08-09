@@ -1,1 +1,1 @@
-Check out my cool portfolio [here](https://swathiasok.github.io/Portfolio/)
+Check out my cool portfolio [here](https://swathiasok.github.io/WPortfolio/)
